@@ -2,19 +2,19 @@
 set -x
 
 # Domain name for the external ALB.
-export kubernetes_ingress_domain=dev.example.com
+export kubernetes_ingress_domain=lab01.devops-gurus.com
 
 # Kubernetes cluster name.
-export kubernetes_cluster_name=hello.k8s.local
+export kubernetes_cluster_name=lab01.k8s.local
 
 # Bucket name for state store of kops and Terraform.
 export state_store_bucket_name="state.$kubernetes_cluster_name"
 
 # AWS Profile.
-export AWS_PROFILE=example
+export AWS_PROFILE=default
 
 # AWS Region.
-export AWS_DEFAULT_REGION=us-west-2
+export AWS_DEFAULT_REGION=us-east-1
 
 ## OIDC provider for Kubernetes Dashboard and Kibana.
 ## See also https://github.com/int128/kubernetes-dashboard-proxy
